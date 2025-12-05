@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="meals.css">
+	<title>Shape Up! | Meal Plan</title>
+</head>
+
+<body>
+	<header>
+		<img src ="..\images/shape_up_logo.png" id="img1">
+        <h1 id ="h2a">Shape Up!</h1>
+        <h2 id ="h2z">Find the best fit for you</h2>
+
+    </header>
+
+	<nav class="navbars">
+		<input type="checkbox" id="checkbox-toggle"/>
+		<label for="checkbox-toggle" class="menu-btn"></label>
+		<ul class="menu">
+			<li><a href="..\index.html" class="active">Home</a></li>
+			<li><a href="..\strength/strength.html">Strength Training</a></li>
+			<li><a href="..\cardio/cardio.html">Cardio Exercises</a></li>
+			<li>Stress Relief &#x25BE;
+				<ul class="dropdown">
+					<li><a href="..\stress/stress.html">What is Stress?</a></li>
+					<li><a href="..\stress/tips.html">5 Helpful Tips</a></li>
+					<li><a href="..\stress/meditate.html"">Meditation</a></li>
+					<li><a href="..\stress/vipassana.html">Vipasana</a></li>
+				</ul>
+			</li>
+			<li class="active">Healthy Diets &#x25BE;
+				<ul class="dropdown">
+					<li><a href="..\diet/diet.html">Why a Healthy Diet?</a></li>
+					<li><a href="..\diet/meals.html">Plan Your Meals</a></li>
+					<li><a href="..\diet/calories.html">Count Your Calories</a></li>
+					<li><a href="..\diet/bmi.html"">Calculate Your BMI</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<div class="left">
+			
+	    <h1>Meal plan order form</h1>
+		<p>Fill out the form as completely as possible and we will email you a weekly meal plan, customized
+			for you--your lifestyle, your goals, and your personal needs.</p>
+
+		<p>Asterisks (*) indicate required entries.</p>
+		<form action="confirmation.html" method="post">
+		<fieldset>
+			<legend>Contact information</legend>
+<div class="div">
+
+	<label for="fullname">Fullname<span class="required">*</span></label>
+	<input type="text" id="fullname" name="fullname" pattern="[A-Za-z]+" accesskey="L" required autofocus>	
+
+	<label for="email">Email<span class="required">*</span></label>
+<input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" accesskey="E" required>
+</div>
+
+<lable for="gender">Gender<span class="required">*</span></lable>
+	<select name="gender" id="gender">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="non-binary">Non-Binary</option>
+	</select>	
+
+	<label for="height">Height<span class="required">*</span></label>
+	<input type="text" id="height" name="height" placeholder="Example: 5ft, 6in">
+
+	<label for="weight">Weight<span class="required">*</span></label>
+	<input type="text" id="weight" name="weight" placeholder="Example: 5ft, 6in">
+
+	<lable for="age">Age</lable>
+	<select name="age" id="age">
+		<option value="under 18">under 18</option>
+		<option value="18 - 34">18 - 34</option>
+		<option value="35 - 44">35 - 44</option>
+		<option value="50 - 69">50 - 69</option>
+		<option value="70+">70+</option>
+	</select>		
+			</fieldset>
+
+	<fieldset>
+		<legend>Lifestyle and goals</legend>
+		<div class="div">
+			<p>Which currently matches your present lifestyle?</p>
+	<div class="radioB">	
+	<input type="radio" name="lstyle" id="active">
+	<label for="active">Active</label>	
+	
+	<input type="radio" name="lstyle" id="moderate">
+	<label for="moderate">Moderate</label>
+
+	<input type="radio" name="lstyle" id="sedentary">
+	<label for="sedentary">Sedentary</label>
+    </div>	
+
+	<p>What are your weight goals?</p>
+	<div class="radioB">
+	<input type="radio" name="goals" id="gain">
+	<label for="gain">Gain</label>	
+	
+	<input type="radio" name="goals" id="lose">
+	<label for="lose">Lose</label>
+
+	<input type="radio" name="goals" id="maintain">
+	<label for="maintain">Maintain</label>
+	</div>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<div class="div">
+		<legend>Food preferences and restrictions</legend>
+	<p>Do you have any dietary restrictions? (select all that apply)</p>
+    <div class="checkB">
+	<input type="checkbox" name="vegetarian" id="vegetarian">
+	<label for="vegetarian">Vegetarian</label>
+
+	<input type="checkbox" name="gluten-free" id="gluten-free">
+	<label for="gluten-free">Gluten-free</label>
+
+	<input type="checkbox" name="kosher" id="kosher">
+	<label for="kosher">Kosher</label>
+	
+
+	<input type="checkbox" name="lowsalt" id="lowsalt">
+	<label for="lowsalt">Low salt</label>
+
+
+	<input type="checkbox" name="comment" id="comment">
+	<label for="comment">Other, please explain:</label>
+	<textarea id="comments" name="comments"></textarea>
+    </div>
+    </div>
+
+</fieldset>
+
+<button type="submit" id="button1">Submit</button>
+
+<button type="reset" id="button2">Reset</button>
+
+	</form>
+</div>
+</section>
+
+	<aside style="line-height: 1.5;">
+		<div class="right">
+		 <h2 style="color :maroon;">Additional Resources</h2>
+		 <ul id="item3" style="font-weight: bold;">
+			<li><a href="..\cardio.html"><img src="../images/run-icon.png" class="navIcons">Physical activity and health</a></li>
+			<li><a href="..\diet/index.html"><img src="../images/stretch-icon.png" class="navIcons">Stretching exercises</a></li>
+			<li><a href="..\strength/strength.html"><img src="../images/strength-icon.png" class="navIcons">Strength training</a></li>
+			<li><a href="..\cardio/cardio.html"><img src="../images/cardio-icon.png" class="navIcons">Cardiovascular training</a></li>
+			<li><a href="..\stress/meditate.html"><img src="../images/yoga-icon.png" class="navIcons">Yoga workout</a></li>
+		 </ul>
+		 </div>
+		
+		   
+</aside>		    
+	</main>
+		<footer class="foot">
+			<p>&copy; Shape Up!</p>
+		</footer>
+</body>
+</html>
